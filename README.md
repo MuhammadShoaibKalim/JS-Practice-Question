@@ -1,6 +1,5 @@
 # JS-Practice-Question
 In this code I have practice some problem that are good for logically and problem solving skills.
-# JS-Practice-Question
 
 ![GitHub](https://img.shields.io/github/license/your-username/JS-Practice-Question)
 
