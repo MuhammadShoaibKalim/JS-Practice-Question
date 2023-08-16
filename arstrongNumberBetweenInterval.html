@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>To check Armstrong Numbers in a given range.</h2>
+    <script>
+        var number1 = parseInt(prompt("Enter upper Number:"));
+        var number2 = parseInt(prompt("Enter lower Number:"));
+
+        for (let i = number1; i <= number2; i++) {
+            var sum = 0;
+            var temp = i;
+            var noOfDigit = i.toString().length;
+            
+            while (temp > 0) {
+                var digit = temp % 10;
+                sum += digit ** noOfDigit;
+                temp = parseInt(temp / 10);
+            }
+
+            if (sum == i) {
+                console.log(`${i} is an Armstrong number.`);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+
+        function sum(number)
+        {
+            if(number>0)
+            {
+                return number + sum(number-1);
+            }
+            else
+            {
+                return number;
+            }
+          
+        }
+        var inputNumber=sum(10);
+        console.log(inputNumber);
+// var num=10;
+// var sum=0;
+// for(let i=0; i<10; i++)
+// {
+//     sum +=i;
+
+// }
+// console.log(sum);
+
+     </script>
+
+</body>
+</html>

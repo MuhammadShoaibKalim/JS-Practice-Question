@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>To find factorial of Number </h2>
+    <h2 id="result"></h2>
+<script>
+
+    var num=parseInt(prompt("Enter the number :"));
+    var factor=factorial(num);
+    function factorial(n){
+        var fact=1;
+    for(let i=1; i<=num;i++)
+    {
+        fact=fact*i;
+    }
+    return fact;
+   }
+   document.getElementById("result").innerText="The factorial is :"+factor;
+    
+  
+</script>
+
+</body>
+</html>

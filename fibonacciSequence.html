@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fibonacci sequence</h2>
+    <script>
+        // var a=0;
+        // var b=1;
+        // console.log(a);
+        // console.log(b);
+        // for(let i=0; i<=10; i++)
+        // {
+        //     var temp=a+b;
+        //     console.log(temp);
+        //     a=b;
+        //     b=temp;
+
+        // }
+       var sequence=[0,1];
+      function generateFibonacci(n)
+      {
+        for(let i=2; i<=n; i++)
+         {
+           var nextNumber=sequence[i-1]+sequence[i-2];
+           sequence.push(nextNumber);
+         }
+         return sequence;
+      }
+
+        var FibonacciSequence=generateFibonacci(10)
+        console.log(FibonacciSequence);
+
+    </script>
+</body>
+</html>

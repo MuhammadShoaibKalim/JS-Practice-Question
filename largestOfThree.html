@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2>Find largest number </h2>
+     <h2 id="result"></h2>
+    <script>
+        var a=parseFloat(prompt("Enter the first Number :"));
+        var b=parseFloat(prompt("Enter the second Number :"));
+        var c=parseFloat(prompt("Enter the third Number :"));
+        var max=Math.max(a,b,c);
+        console.log(`${a},${b},${c} max is : ${max}`);
+         document.getElementById("result").innerText="The max is :"+max;
+    </script> -->
+       <h2>Find largest number </h2>
+       <h2 id="result"></h2>
+    <script>
+        var x=parseFloat(prompt("Enter the first Number :"));
+        var y=parseFloat(prompt("Enter the second Number :"));
+        var z=parseFloat(prompt("Enter the third Number :"));
+        var max=check(x,y,z);
+        function check(a,b,c){
+            if(a>=b && a>=c)
+            return a;
+            else if(b>=a && b>=c)
+            return b;
+            else
+            return c;
+        }
+        document.getElementById("result").innerText="The max is :"+max;
+    </script> 
+
+
+</body>
+</html>

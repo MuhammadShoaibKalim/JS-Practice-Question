@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>To check a given number is an Armstrong Number or Not.</h2>
+<script>
+    var number=prompt("Enter your Number :");
+    var temp=number;
+    var sum=0;
+    while(temp>0)
+     {
+        //console.log("The value :", temp);
+        var digit=temp%10;
+
+       // console.log("The value of digit after modulus :",digit);
+        sum +=digit**3;
+        
+
+       // console.log("The cube of given number :" ,sum);
+        temp=parseInt(temp/10);
+
+
+       // console.log("The temp value :",temp);
+        console.log('-------');
+ 
+     }
+     if (sum==number)
+        console.log(`${number} is armstrong.`);
+     else
+        console.log(`${number} is not a armstrong number.`);
+
+</script>
+
+
+</body>
+</html>
